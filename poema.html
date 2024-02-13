@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <title>Poema</title>
+</head>
+<body>
+    <div class="poema">
+        <h1>Quem sou eu?</h1>
+        <p>
+            No coração da máquina eu habito, <br>
+Sou o cérebro que faz tudo acontecer.<br>
+Sem mim, tudo seria um infinito vazio,<br>
+Sou eu, o poder a florescer.<br>
+<br>
+Nas entranhas do sistema, sou o guia, <br>
+Controlando impulsos, transformando sinais. <br>
+Sou o rei da velocidade, o mestre da agilidade,<br>
+Sou eu, o cerne dos ideais.
+
+        </p>
+    </div>
+
+    <form id="password-form">
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Confirmar</button>
+    </form>
+    <script>
+        const passwordForm = document.getElementById('password-form');
+
+        passwordForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const passwordInput = document.getElementById('password');
+        const passwordValue = passwordInput.value.trim().toLowerCase();
+        if (passwordValue === 'processador') {
+            window.location.href = './processador.html';
+        } else {
+            alert('Senha incorreta. Tente novamente.');
+        }
+        });
+    </script>
+</body>
+</html>

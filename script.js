@@ -26,7 +26,7 @@ passwordForm.addEventListener('submit', function(event) {
     const passwordInput = document.getElementById('password');
     const passwordValue = passwordInput.value.trim().toLowerCase();
     if (passwordValue === 'poema') {
-        window.location.href = 'https://www.google.com';
+        window.location.href = './poema.html';
     } else {
         alert('Senha incorreta. Tente novamente.');
     }
