@@ -55,8 +55,8 @@
 </head>
 <body>
     <div class="enigma">
-    <h2>Mermã, será que dá pra traduzir esse código binário aí? 🤔</h2>
-    <h4>01110011 01101001 01101101</h4>
+    <h2>Mermã, será que dá pra traduzir esse código? 🤔</h2>
+    <h4>01100101 01101110 01101001 01100111 01101101 01100001</h4>
     </div>
 
     <form id="password-form">
@@ -71,7 +71,7 @@
         event.preventDefault();
         const passwordInput = document.getElementById('password');
         const passwordValue = passwordInput.value.trim().toLowerCase();
-        if (passwordValue === 'sim') {
+        if (passwordValue === 'enigma') {
             window.location.href = './prototipo.html';
         } else {
             alert('Senha incorreta. Tente novamente.');
