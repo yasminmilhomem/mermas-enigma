@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
-    <title>Rota esquisita</title>
+    <title>Enigma</title>
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -55,10 +55,15 @@
 </head>
 <body>
     <div class="enigma">
-    <h2>Por falar em protótipo, qual das opções abaixo é um protótipo?</h2>
-    <h3>essa não entrete e dá pra chutar, vou tirar essa da jogada</h3>
+    <h2>Nossa jornada tá muito divertida, mermã! Espera aí, tem um gato por aqui? <br> Esse amiguinho guarda tantos projetos nossos. 🐈‍⬛ <br> Onde será que ele guarda esses projetos?</h2>
+    <img src="gatinho.jpg" width="350px" alt="">
     </div>
 
+    <form id="password-form">
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Confirmar</button>
+    </form>
     <script>
         const passwordForm = document.getElementById('password-form');
 
@@ -66,8 +71,8 @@
         event.preventDefault();
         const passwordInput = document.getElementById('password');
         const passwordValue = passwordInput.value.trim().toLowerCase();
-        if (passwordValue === 'prototipo') {
-            window.location.href = './qualprototipo.html';
+        if (passwordValue === 'repositorio') {
+            window.location.href = './repositorio.html';
         } else {
             alert('Senha incorreta. Tente novamente.');
         }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
-    <title>Rota esquisita</title>
+    <title>QR Code</title>
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -55,9 +55,9 @@
 </head>
 <body>
     <div class="enigma">
-    <h2>Nossa jornada tá muito divertida, mermã! 💜 Pena que... 😨 o nome dessa rota tá meio esquisito... </h2>
+    <h2>Talvez a câmera do seu celular possa revelar algo nessa imagem</h2>
+    <img src="qrcode.png" width="300px" alt="">
     </div>
-
     <form id="password-form">
         <label for="password">Senha:</label>
         <input type="password" id="password" name="password" required>
@@ -70,8 +70,8 @@
         event.preventDefault();
         const passwordInput = document.getElementById('password');
         const passwordValue = passwordInput.value.trim().toLowerCase();
-        if (passwordValue === 'rotaesquisita') {
-            window.location.href = './rotaesquisita.html';
+        if (passwordValue === 'criarmeuwebsite') {
+            window.location.href = './criarmeuwebsite.html';
         } else {
             alert('Senha incorreta. Tente novamente.');
         }
