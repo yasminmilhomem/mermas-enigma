@@ -31,3 +31,5 @@ passwordForm.addEventListener('submit', function(event) {
         alert('Senha incorreta. Tente novamente.');
     }
 });
+
+export { toggleTheme };
